@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/shira/Desktop/cpp-uth-encapsulation-ShiraZaltsman/encaps_def.h
+
+/home/shira/Desktop/cpp-uth-encapsulation-ShiraZaltsman/main.c
+stdio.h
+-
+encaps_def.h
+/home/shira/Desktop/cpp-uth-encapsulation-ShiraZaltsman/encaps_def.h
+
