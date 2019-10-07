@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/main.c.o"
+  "CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/encaps_def.c.o"
+  "CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/inheritance.c.o"
   "cpp_uth_encapsulation_ShiraZaltsman.pdb"
   "cpp_uth_encapsulation_ShiraZaltsman"
 )

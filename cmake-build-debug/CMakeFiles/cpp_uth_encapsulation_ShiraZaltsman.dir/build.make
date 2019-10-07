@@ -70,17 +70,47 @@ CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/main.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shira/Desktop/cpp-uth-encapsulation-ShiraZaltsman/main.c -o CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/main.c.s
 
+CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/encaps_def.c.o: CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/flags.make
+CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/encaps_def.c.o: ../encaps_def.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shira/Desktop/cpp-uth-encapsulation-ShiraZaltsman/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/encaps_def.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/encaps_def.c.o   -c /home/shira/Desktop/cpp-uth-encapsulation-ShiraZaltsman/encaps_def.c
+
+CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/encaps_def.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/encaps_def.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shira/Desktop/cpp-uth-encapsulation-ShiraZaltsman/encaps_def.c > CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/encaps_def.c.i
+
+CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/encaps_def.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/encaps_def.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shira/Desktop/cpp-uth-encapsulation-ShiraZaltsman/encaps_def.c -o CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/encaps_def.c.s
+
+CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/inheritance.c.o: CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/flags.make
+CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/inheritance.c.o: ../inheritance.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shira/Desktop/cpp-uth-encapsulation-ShiraZaltsman/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/inheritance.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/inheritance.c.o   -c /home/shira/Desktop/cpp-uth-encapsulation-ShiraZaltsman/inheritance.c
+
+CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/inheritance.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/inheritance.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shira/Desktop/cpp-uth-encapsulation-ShiraZaltsman/inheritance.c > CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/inheritance.c.i
+
+CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/inheritance.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/inheritance.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shira/Desktop/cpp-uth-encapsulation-ShiraZaltsman/inheritance.c -o CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/inheritance.c.s
+
 # Object files for target cpp_uth_encapsulation_ShiraZaltsman
 cpp_uth_encapsulation_ShiraZaltsman_OBJECTS = \
-"CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/main.c.o"
+"CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/main.c.o" \
+"CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/encaps_def.c.o" \
+"CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/inheritance.c.o"
 
 # External object files for target cpp_uth_encapsulation_ShiraZaltsman
 cpp_uth_encapsulation_ShiraZaltsman_EXTERNAL_OBJECTS =
 
 cpp_uth_encapsulation_ShiraZaltsman: CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/main.c.o
+cpp_uth_encapsulation_ShiraZaltsman: CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/encaps_def.c.o
+cpp_uth_encapsulation_ShiraZaltsman: CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/inheritance.c.o
 cpp_uth_encapsulation_ShiraZaltsman: CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/build.make
 cpp_uth_encapsulation_ShiraZaltsman: CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/shira/Desktop/cpp-uth-encapsulation-ShiraZaltsman/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable cpp_uth_encapsulation_ShiraZaltsman"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/shira/Desktop/cpp-uth-encapsulation-ShiraZaltsman/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable cpp_uth_encapsulation_ShiraZaltsman"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

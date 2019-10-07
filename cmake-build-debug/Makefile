@@ -123,6 +123,60 @@ cpp_uth_encapsulation_ShiraZaltsman/fast:
 	$(MAKE) -f CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/build.make CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/build
 .PHONY : cpp_uth_encapsulation_ShiraZaltsman/fast
 
+encaps_def.o: encaps_def.c.o
+
+.PHONY : encaps_def.o
+
+# target to build an object file
+encaps_def.c.o:
+	$(MAKE) -f CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/build.make CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/encaps_def.c.o
+.PHONY : encaps_def.c.o
+
+encaps_def.i: encaps_def.c.i
+
+.PHONY : encaps_def.i
+
+# target to preprocess a source file
+encaps_def.c.i:
+	$(MAKE) -f CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/build.make CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/encaps_def.c.i
+.PHONY : encaps_def.c.i
+
+encaps_def.s: encaps_def.c.s
+
+.PHONY : encaps_def.s
+
+# target to generate assembly for a file
+encaps_def.c.s:
+	$(MAKE) -f CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/build.make CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/encaps_def.c.s
+.PHONY : encaps_def.c.s
+
+inheritance.o: inheritance.c.o
+
+.PHONY : inheritance.o
+
+# target to build an object file
+inheritance.c.o:
+	$(MAKE) -f CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/build.make CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/inheritance.c.o
+.PHONY : inheritance.c.o
+
+inheritance.i: inheritance.c.i
+
+.PHONY : inheritance.i
+
+# target to preprocess a source file
+inheritance.c.i:
+	$(MAKE) -f CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/build.make CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/inheritance.c.i
+.PHONY : inheritance.c.i
+
+inheritance.s: inheritance.c.s
+
+.PHONY : inheritance.s
+
+# target to generate assembly for a file
+inheritance.c.s:
+	$(MAKE) -f CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/build.make CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/inheritance.c.s
+.PHONY : inheritance.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -159,6 +213,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... cpp_uth_encapsulation_ShiraZaltsman"
 	@echo "... edit_cache"
+	@echo "... encaps_def.o"
+	@echo "... encaps_def.i"
+	@echo "... encaps_def.s"
+	@echo "... inheritance.o"
+	@echo "... inheritance.i"
+	@echo "... inheritance.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

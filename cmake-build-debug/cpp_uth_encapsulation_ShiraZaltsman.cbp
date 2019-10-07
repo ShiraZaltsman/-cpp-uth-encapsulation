@@ -78,6 +78,18 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/shira/Desktop/cpp-uth-encapsulation-ShiraZaltsman/encaps_def.c">
+			<Option target="cpp_uth_encapsulation_ShiraZaltsman"/>
+		</Unit>
+		<Unit filename="/home/shira/Desktop/cpp-uth-encapsulation-ShiraZaltsman/encaps_def.h">
+			<Option target="cpp_uth_encapsulation_ShiraZaltsman"/>
+		</Unit>
+		<Unit filename="/home/shira/Desktop/cpp-uth-encapsulation-ShiraZaltsman/inheritance.c">
+			<Option target="cpp_uth_encapsulation_ShiraZaltsman"/>
+		</Unit>
+		<Unit filename="/home/shira/Desktop/cpp-uth-encapsulation-ShiraZaltsman/inheritance.h">
+			<Option target="cpp_uth_encapsulation_ShiraZaltsman"/>
+		</Unit>
 		<Unit filename="/home/shira/Desktop/cpp-uth-encapsulation-ShiraZaltsman/main.c">
 			<Option target="cpp_uth_encapsulation_ShiraZaltsman"/>
 		</Unit>

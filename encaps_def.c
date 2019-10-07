@@ -5,97 +5,86 @@
 #include "encaps_def.h"
 #include <stdio.h>
 
-//// Box ////////////
 
-void Box_ctor_d(Box * box,double dim) {
-    box->length=dim;
-    box->width=dim;
-    box->height=dim;
-    box_print(box);
-}
-void Box_ctor(Box * box) {
-    box->length=1;
-    box->width=1;
-    box->height=1;
-    box_print(box);
-}
-void Box_cpy_ctor(Box *box1, Box *box2) {
-    box1->length=box2->length;
-    box1->height=box2->height;
-    box1->width=box2->width;
-}
-void Box_ctor_ddd(Box *box, double l, double w, double h){
-    box->length=l;
-    box->width=w;
-    box->height=h;
-    box_print(box);
+/*/// Box ///////////*/
+void print_KpBxK(const Box *const box)
+{
+    printf("Box: %f x %f x %f\n",  box->length, box->width, box->height);
 }
 
-void Box_dtor(Box *box)
+void __cBOX__pBx(Box *box)
+{
+    box->width = 1;
+    box->length = 1;
+    box->height = 1;
+    print_KpBxK(box);
+}
+
+void __cBOX__pBx_d(Box *box, double dim)
+{
+    box->width = dim;
+    box->length = dim;
+    box->height = dim;
+    print_KpBxK(box);
+}
+
+void __cBOX__pBx_d_d_d(Box *box, double l, double w, double h)
+{
+    box->length = l;
+    box->width = w;
+    box->height = h;
+    print_KpBxK(box);
+}
+
+void __ccBOX__pBx_KpBx(Box *const box1, const Box const *box2)
+{
+    box1->height = box2->height;
+    box1->width = box2->width;
+    box1->length = box2->length;
+}
+
+void __dBOX__pBx(Box* box)
 {
     printf("Box destructor, %f x %f x %f\n", box->width, box->height, box->length);
 }
 
-void Box_mult_d(Box* box, double mult)
+
+void __opr_mult_equ__pBxK_d(Box *const box, double mult)
 {
     box->width *= mult;
     box->height *= mult;
     box->length *= mult;
 }
-Box* boxp_Box_mult_d(const Box* box, double mult)
+
+
+/*/// Shelf ///////////*/
+/*void __cSHELF__pshf_(Shelf *shelf)
 {
-    Box *ret;
-    Box_cpy_ctor(ret,box);
-    Box_mult_d(ret, mult);
-    return ret;
-}
-bool box_is_equal(const Box *lhs, const Box *rhs)
-{
-    if(lhs->width == rhs->width && lhs->height == rhs->height && lhs->length == rhs->length){
-        return true;
+    int i=0;
+    for(; i<3; ++i)
+    {
+        __cBOX__pBx_(&shelf->boxes[i]);
     }
-    else{
-        return false;
-    }
+}*/
 
-}
-void box_print(const Box *box)
+void setBox_i_KpBx(Shelf *shelf, int index, Box const *dims)
 {
-    printf("Box: %f x %f x %f\n", box->length, box->width, box->height);
+    __ccBOX__pBx_KpBx(&shelf->boxes[index], dims);
 }
 
-double box_getVolume(const Box *box)
+double getVolume_KpShf(const Shelf *shelf)
 {
-    double res =  box->width * box->length * box->height;
-    return res;
-}
-
-
-//// Shelf ////////////
-
-const char* message = "The total volume held on the shelf is";
-void setBox(Shelf *shelf, int index, const Box* dims)
-{
-    shelf->boxes[index] = dims;
-}
-
-double shelf_getVolume(Shelf *shelf)
-{
+    int i = 0;
     double vol = 0;
-    for (int i = 0; i < 3; ++i)
-    vol += box_getVolume(shelf->boxes[i]);
+    for (; i < 3; ++i) {
+        vol += shelf->boxes[i].width *shelf->boxes[i].height*shelf->boxes[i].length;
+    }
 
-return vol;
+    return vol;
 }
 
-void shelf_print(Shelf *shelf)
+void print_KpShfK(const Shelf *const shelf)
 {
-    printf("%s %d\n", message, shelf_getVolume(shelf));
+    printf("%s %f\n", "The total volume held on the shelf is", getVolume_KpShf(shelf));
 }
-
-void setMessage(const char* msg)
-{
-    message = msg;
-}
-
 
