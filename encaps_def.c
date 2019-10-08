@@ -77,7 +77,7 @@ double getVolume_KpShf(const Shelf *shelf)
     int i = 0;
     double vol = 0;
     for (; i < 3; ++i) {
-        vol += shelf->boxes[i].width *shelf->boxes[i].height*shelf->boxes[i].length;
+      //  vol += shelf->boxes[i].width *shelf->boxes[i].height*shelf->boxes[i].length;
     }
 
     return vol;

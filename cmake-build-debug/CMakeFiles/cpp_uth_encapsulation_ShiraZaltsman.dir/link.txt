@@ -1,1 +1,1 @@
-/usr/bin/cc -g   CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/main.c.o CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/encaps_def.c.o CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/inheritance.c.o  -o cpp_uth_encapsulation_ShiraZaltsman 
+/usr/bin/cc -g   CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/polymorphisem.c.o  -o cpp_uth_encapsulation_ShiraZaltsman 

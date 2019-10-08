@@ -32,7 +32,7 @@ const char* name(Types mat) {
 
 typedef struct{
         Types material;
-        Materials m_matirals;//empty struct
+        //Materials m_matirals;//empty struct
 }Material_t;
 
 void Material_t_cator_Ty(Material_t *this, Types mat){

@@ -123,86 +123,32 @@ cpp_uth_encapsulation_ShiraZaltsman/fast:
 	$(MAKE) -f CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/build.make CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/build
 .PHONY : cpp_uth_encapsulation_ShiraZaltsman/fast
 
-encaps_def.o: encaps_def.c.o
+polymorphisem.o: polymorphisem.c.o
 
-.PHONY : encaps_def.o
-
-# target to build an object file
-encaps_def.c.o:
-	$(MAKE) -f CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/build.make CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/encaps_def.c.o
-.PHONY : encaps_def.c.o
-
-encaps_def.i: encaps_def.c.i
-
-.PHONY : encaps_def.i
-
-# target to preprocess a source file
-encaps_def.c.i:
-	$(MAKE) -f CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/build.make CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/encaps_def.c.i
-.PHONY : encaps_def.c.i
-
-encaps_def.s: encaps_def.c.s
-
-.PHONY : encaps_def.s
-
-# target to generate assembly for a file
-encaps_def.c.s:
-	$(MAKE) -f CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/build.make CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/encaps_def.c.s
-.PHONY : encaps_def.c.s
-
-inheritance.o: inheritance.c.o
-
-.PHONY : inheritance.o
+.PHONY : polymorphisem.o
 
 # target to build an object file
-inheritance.c.o:
-	$(MAKE) -f CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/build.make CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/inheritance.c.o
-.PHONY : inheritance.c.o
+polymorphisem.c.o:
+	$(MAKE) -f CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/build.make CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/polymorphisem.c.o
+.PHONY : polymorphisem.c.o
 
-inheritance.i: inheritance.c.i
+polymorphisem.i: polymorphisem.c.i
 
-.PHONY : inheritance.i
-
-# target to preprocess a source file
-inheritance.c.i:
-	$(MAKE) -f CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/build.make CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/inheritance.c.i
-.PHONY : inheritance.c.i
-
-inheritance.s: inheritance.c.s
-
-.PHONY : inheritance.s
-
-# target to generate assembly for a file
-inheritance.c.s:
-	$(MAKE) -f CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/build.make CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/inheritance.c.s
-.PHONY : inheritance.c.s
-
-main.o: main.c.o
-
-.PHONY : main.o
-
-# target to build an object file
-main.c.o:
-	$(MAKE) -f CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/build.make CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/main.c.o
-.PHONY : main.c.o
-
-main.i: main.c.i
-
-.PHONY : main.i
+.PHONY : polymorphisem.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) -f CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/build.make CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/main.c.i
-.PHONY : main.c.i
+polymorphisem.c.i:
+	$(MAKE) -f CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/build.make CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/polymorphisem.c.i
+.PHONY : polymorphisem.c.i
 
-main.s: main.c.s
+polymorphisem.s: polymorphisem.c.s
 
-.PHONY : main.s
+.PHONY : polymorphisem.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) -f CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/build.make CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/main.c.s
-.PHONY : main.c.s
+polymorphisem.c.s:
+	$(MAKE) -f CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/build.make CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/polymorphisem.c.s
+.PHONY : polymorphisem.c.s
 
 # Help Target
 help:
@@ -213,15 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... cpp_uth_encapsulation_ShiraZaltsman"
 	@echo "... edit_cache"
-	@echo "... encaps_def.o"
-	@echo "... encaps_def.i"
-	@echo "... encaps_def.s"
-	@echo "... inheritance.o"
-	@echo "... inheritance.i"
-	@echo "... inheritance.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... polymorphisem.o"
+	@echo "... polymorphisem.i"
+	@echo "... polymorphisem.s"
 .PHONY : help
 
 
