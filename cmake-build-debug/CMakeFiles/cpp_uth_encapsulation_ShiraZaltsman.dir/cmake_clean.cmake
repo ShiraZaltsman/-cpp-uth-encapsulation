@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/polymorphisem.c.o"
+  "CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/polymorphism_defs.c.o"
   "cpp_uth_encapsulation_ShiraZaltsman.pdb"
   "cpp_uth_encapsulation_ShiraZaltsman"
 )

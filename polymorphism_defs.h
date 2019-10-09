@@ -31,9 +31,12 @@ typedef struct {
 
 
 void TF_print(const TextFormatter *this, const char *text);
-void TF_dtor(TextFormatter *this);
 void TextFormatterCTOR(TextFormatter *this);
 void TextFormatterDTOR(TextFormatter *this);
+
+
+
+
 struct DefaultTextFormatter_VT;
 typedef struct {
     TextFormatter inher;
@@ -41,7 +44,7 @@ typedef struct {
         //static int next_id;
         //static int getId() { return next_id++; }
     } Ider;
-    const int id;
+    int id;
     struct DefaultTextFormatter_VT *vptr;
 
 } DefaultTextFormatter;
@@ -58,10 +61,10 @@ void DefaultTextFormatterASSIGHN(DefaultTextFormatter *this, const DefaultTextFo
 
 void DefaultTextFormatterDTOR(DefaultTextFormatter *this);
 
-int next_id = 0;
+int next_id;
 
 typedef struct {
-    void (*p_TF_print)(const TextFormatter *this, const char *text);
+
 } DefaultTextFormatter_VT;
 
 

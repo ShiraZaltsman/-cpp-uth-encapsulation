@@ -81,6 +81,12 @@
 		<Unit filename="/home/shira/Desktop/cpp-uth-encapsulation-ShiraZaltsman/polymorphisem.c">
 			<Option target="cpp_uth_encapsulation_ShiraZaltsman"/>
 		</Unit>
+		<Unit filename="/home/shira/Desktop/cpp-uth-encapsulation-ShiraZaltsman/polymorphism_defs.c">
+			<Option target="cpp_uth_encapsulation_ShiraZaltsman"/>
+		</Unit>
+		<Unit filename="/home/shira/Desktop/cpp-uth-encapsulation-ShiraZaltsman/polymorphism_defs.h">
+			<Option target="cpp_uth_encapsulation_ShiraZaltsman"/>
+		</Unit>
 		<Unit filename="/home/shira/Desktop/cpp-uth-encapsulation-ShiraZaltsman/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

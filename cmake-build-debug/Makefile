@@ -150,6 +150,33 @@ polymorphisem.c.s:
 	$(MAKE) -f CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/build.make CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/polymorphisem.c.s
 .PHONY : polymorphisem.c.s
 
+polymorphism_defs.o: polymorphism_defs.c.o
+
+.PHONY : polymorphism_defs.o
+
+# target to build an object file
+polymorphism_defs.c.o:
+	$(MAKE) -f CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/build.make CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/polymorphism_defs.c.o
+.PHONY : polymorphism_defs.c.o
+
+polymorphism_defs.i: polymorphism_defs.c.i
+
+.PHONY : polymorphism_defs.i
+
+# target to preprocess a source file
+polymorphism_defs.c.i:
+	$(MAKE) -f CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/build.make CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/polymorphism_defs.c.i
+.PHONY : polymorphism_defs.c.i
+
+polymorphism_defs.s: polymorphism_defs.c.s
+
+.PHONY : polymorphism_defs.s
+
+# target to generate assembly for a file
+polymorphism_defs.c.s:
+	$(MAKE) -f CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/build.make CMakeFiles/cpp_uth_encapsulation_ShiraZaltsman.dir/polymorphism_defs.c.s
+.PHONY : polymorphism_defs.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,6 +189,9 @@ help:
 	@echo "... polymorphisem.o"
 	@echo "... polymorphisem.i"
 	@echo "... polymorphisem.s"
+	@echo "... polymorphism_defs.o"
+	@echo "... polymorphism_defs.i"
+	@echo "... polymorphism_defs.s"
 .PHONY : help
 
 

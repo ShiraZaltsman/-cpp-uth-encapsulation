@@ -3,22 +3,35 @@
 //
 
 #include "polymorphism_defs.h"
-VirtualTable TF_vt={TextFormatterDTOR};
+VirtualTable TF_vt={(VirtualTable) TextFormatterDTOR};
 void TextFormatterCTOR(TextFormatter* this){
-this->vptr = &TF_vt;
+this->vptr = (VirtualTable) &TF_vt;
 };
+
+void TextFormatterDTOR(TextFormatter *this) {
+    printf("--- TextFormatter DTOR----\n ");
+}
+VirtualTable DTF_vt={(VirtualTable)DefaultTextFormatterDTOR};
+next_id=0;
 void DefaultTextFormatterCTOR(DefaultTextFormatter* this){
     TextFormatterCTOR(&this->inher);
+    this->id=next_id++;
+    this->inher.vptr= (VirtualTable) &DTF_vt;
+    printf("--- DefaultTextFormatter Default CTOR\n########## C %d ##########\n", this->id);
 }
-void DefaultTextFormatterCOPYCTOR(DefaultTextFormatter* this, const DefaultTextFormatter* other){
 
+void DefaultTextFormatterCOPYCTOR(DefaultTextFormatter* this, const DefaultTextFormatter* other){
+    printf("--- DefaultTextFormatter Copy CTOR, from id: %d\n########## C %d ##########\n", other->id, this->id);
 }
 void DefaultTextFormatterASSIGHN(DefaultTextFormatter* this, const DefaultTextFormatter* other){
 
 }
 void DefaultTextFormatterDTOR(DefaultTextFormatter* this){
     printf("--- DefaultTextFormatter DTOR\n########## D %d ##########\n", this->id);
+    this->inher.vptr= (VirtualTable) &TF_vt;
+    this->inher.vptr[0](&this->inher);
 }
+
 //using std::printf;
 //
 //

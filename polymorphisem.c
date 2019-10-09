@@ -168,6 +168,9 @@
 int main()
 {
     printf("\n--- Start main() ---\n\n");
+    DefaultTextFormatter dtf;
+    DefaultTextFormatterCTOR(&dtf);
+    DefaultTextFormatterDTOR(&dtf);
 //
 //    doPrePostFixer();
 //    doPrePostDollarFixer();
